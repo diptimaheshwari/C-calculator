@@ -1,0 +1,93 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void AddN(int a, int b){
+    cout<<a+b<<endl;
+    cout<<"enter 0 to exit"<<endl;
+}
+
+void subN(int a, int b){
+    cout<<a-b<<endl;
+    cout<<"enter 0 to exit"<<endl;
+}
+
+void MultN(int a, int b){
+    cout<<a*b<<endl;
+    cout<<"enter 0 to exit"<<endl;
+}
+
+void sqrtN(int a){
+    cout<<a*a<<endl;
+    cout<<"enter 0 to exit"<<endl;
+}
+
+void divN(int a, int b){
+    cout<<a/b<<endl;
+    cout<<"enter 0 to exit"<<endl;
+}
+
+void powN(int a, int b){
+    cout<<pow(a,b)<<endl;
+    cout<<"enter 0 to exit"<<endl;
+}
+
+int main(){
+
+while(true){
+
+cout<<"enter the numbers:";
+int B;
+int C;
+cin>>B;
+cin>>C;
+
+if(B==0 && C==0){
+  cout<<"calculator exited"<<endl;
+  break;
+  }
+  
+  else{
+  
+cout<<"choose the operation:"<<endl;
+cout<<"A : Add"<<endl;
+cout<<"U : Sub"<<endl;
+cout<<"E : multiply"<<endl;
+cout<<"S : square root"<<endl;
+cout<<"D : division"<<endl;
+cout<<"P : power"<<endl;
+
+char x;
+cin>>x;
+if(x=='A'||x=='a'){
+  AddN(B,C);
+  }
+  
+ if(x=='U'||x=='u'){
+   subN(B,C);
+   }
+   
+  if(x=='E'||x=='e'){
+  MultN(B,C);
+  }
+   
+  if(x=='S'||x=='s'){
+  sqrtN(B);
+  }
+  
+  if(x=='D'||x=='d'){
+  divN(B,C);
+  }
+  
+  if(x=='P'||x=='p'){
+  powN(B,C);
+  }
+  
+  }
+  }
+  
+  return 0;
+  }
+  
+  
+  
